@@ -1,0 +1,18 @@
+digraph auto {
+	graph [bgcolor=transparent]
+	node [fixedsize=true style=filled width=0.95]
+	"83c831f0b085c70509b1fbb0a0131a9a32e691ac" [label="83c831f" fillcolor="#9ccc66"]
+	"6015b9f19393e2b6973ff3f0bdbbe73b1616a4b8" [label="6015b9f" fillcolor="#bc9b8f"]
+	"6015b9f19393e2b6973ff3f0bdbbe73b1616a4b8" -> "83c831f0b085c70509b1fbb0a0131a9a32e691ac"
+	"3413f7fd3f71b92a51dabd7c75c625e5910d2f98" [label="3413f7f" fillcolor="#85d5fa"]
+	"3413f7fd3f71b92a51dabd7c75c625e5910d2f98" -> "6015b9f19393e2b6973ff3f0bdbbe73b1616a4b8"
+	main [label=main fillcolor="#9999ff"]
+	main -> "3413f7fd3f71b92a51dabd7c75c625e5910d2f98"
+	HEAD [label=HEAD fillcolor="#e6ccff"]
+	HEAD -> main
+	"origin/main" [label=main fillcolor="#ffa366"]
+	"origin/main" -> "3413f7fd3f71b92a51dabd7c75c625e5910d2f98"
+	origin [label=origin fillcolor="#ff6666"]
+	origin -> "origin/main"
+	"origin/main" -> main
+}
